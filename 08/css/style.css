@@ -4,6 +4,26 @@
 /* YUI 2: Reset CSS */
 @import url(yui2-reset.css);
 
+.flexbox {
+    display:-webkit-flex;/*--- safari（PC）用 ---*/
+    display:flex;
+    -webkit-justify-content:flex-start;/*--- safari（PC）用 ---*/
+    justify-content:flex-start;
+　flex-direction:column;
+    width:500px;
+    border-left:1px solid red;
+}
+.f_item {
+    -webkit-flex-basis:50px;/*--- safari（PC）用 ---*/
+    flex-basis:50px;
+    /*--- 装飾 ---*/
+    background-color:black;
+    color:white;    
+    text-align:center;
+    border-left:1px solid white;
+}
+
+
 /* 共通スタイル */
 body {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo,
